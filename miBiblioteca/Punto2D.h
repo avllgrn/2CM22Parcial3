@@ -15,14 +15,13 @@ public:
     Punto2D(void);
     Punto2D(double x, double y);
     ~Punto2D(void);
-    void pideleAlUsuarioTuEstado(void);
-    void muestraTuEstado(void);
+    virtual void pideleAlUsuarioTuEstado(void);
+    virtual void muestraTuEstado(void);
     double dameTuAtributoX(void);
     void modificaTuAtributoX(double x);
     double dameTuAtributoY(void);
     void modificaTuAtributoY(double y);
 };
-
 Punto2D suma(Punto2D A, Punto2D B);
 Punto2D resta(Punto2D A, Punto2D B);
 double distanciaEntre(Punto2D A, Punto2D B);
